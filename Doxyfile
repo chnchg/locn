@@ -1,0 +1,8 @@
+PROJECT_NAME           = "CC Localization"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = README.md src
+USE_MDFILE_AS_MAINPAGE = README.md
+STRIP_FROM_PATH        = src
+SOURCE_BROWSER         = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
