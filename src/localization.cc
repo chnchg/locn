@@ -31,20 +31,22 @@ double likelihood(
 }
 
 // additional parameters for function
-double const * fn_im;
-int fn_w;
-unsigned fn_cnt;
+double const * fn_im; ///<cropped square image data
+int fn_w; ///<image width
+unsigned fn_cnt; ///<count of function calls
 
+/// Function to be minimized
 double fn(double const * p)
 {
 	fn_cnt ++;
 	return likelihood(fn_im, 9, fn_w, p);
 }
 
+/// Process a single 2D image
 void process_image(
 	double const * data, ///<image data
-	unsigned w,
-	unsigned h
+	unsigned w, ///<image width
+	unsigned h ///<image height
 )
 {
 	// convolution kernels

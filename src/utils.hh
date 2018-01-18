@@ -20,5 +20,5 @@ struct Error
 
 extern int msg_level; ///<level below which messages are shown
 extern std::ostream & msg(int level); ///<message stream with given level
-void error(std::string const & m);
-void warn(std::string const & m);
+void error(std::string const & m); ///<throw error after error message
+void warn(std::string const & m); ///<produce warnning message
