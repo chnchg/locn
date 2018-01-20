@@ -1,13 +1,10 @@
 /**\file
-   \brief Process TIFF file
+   \brief Class for processing TIFF file
+   \author Chun-Chung Chen &lt;cjj@u.washington.edu&gt;
  */
 #pragma once
 #include <memory>
-#include <iostream>
 #include <fstream>
-#include <string>
-#include <iomanip>
-#include <ios>
 #include <vector>
 #include <tuple>
 #include <map>
@@ -15,7 +12,7 @@
 /// TIFF file processor
 class Tiff
 {
-	std::shared_ptr<std::istream> sp; ///<stream to read data from
+	std::shared_ptr<std::ifstream> sp; ///<stream to read data from
 	bool le; ///<little endian?
 	bool efix; ///<need to fix endian?
 	uint32_t ifd; ///<Image file directory offset
@@ -42,9 +39,12 @@ private:
 	std::tuple<uint32_t,uint32_t> get_ratio(DEntry const & e);
 public:
 	/// Construct TIFF processor from an input stream
-	Tiff(std::shared_ptr<std::istream> s) : sp(s) {}
+	Tiff(std::shared_ptr<std::ifstream> s) : sp(s) {}
 	void start(); ///<start with TIFF file header
-	uint32_t parse_ifd(uint32_t i = 0); ///<parse image file directory (IFD)
+	/// Parse image file directory (IFD)
+	uint32_t parse_ifd(
+		uint32_t i = 0 ///<offset position for the IFD
+	); ///<\return offset position for next IFD, 0 if there is no more
 	std::vector<char> read_image(); ///<read image data
 	/// Directory entry ID tags
 	enum Tag {

@@ -8,5 +8,7 @@ set(CC_SRC
 	nelder_mead.cc nelder_mead.hh
 	utils.cc utils.hh
 )
-add_executable(lczn localization.cc ${CC_SRC})
 
+add_executable(lczn localization.cc ${CC_SRC})
+add_executable(loc1 loc1.cc tiff.cc tiff.hh
+	nelder_mead.hxx utils.hxx utils.cc utils.hh)

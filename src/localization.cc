@@ -45,8 +45,8 @@ double fn(double const * p)
 /// Process a single 2D image
 void process_image(
 	double const * data, ///<image data
-	unsigned w, ///<image width
-	unsigned h ///<image height
+	int w, ///<image width
+	int h ///<image height
 )
 {
 	// convolution kernels
@@ -80,7 +80,7 @@ void process_image(
 	f1a /= sz;
 	f1a2 /= sz;
 	double threshold = 1.5*sqrt(f1a2-f1a*f1a);
-	msg(9) << "threshold = " << threshold << '\n';
+	debug << "threshold = " << threshold << '\n';
 
 	// calculate f2
 	std::vector<double> f2(sz);
@@ -100,7 +100,7 @@ void process_image(
 	}
 
 	// find 8-connected local maximum by forward elimination
-	std::vector<unsigned> nd{1,w+1,w,w-1};
+	std::vector<int> nd{1,w+1,w,w-1};
 	std::vector<bool> n8(sz,true);
 	double stps[] = {1,1,0.2,1,1}; // step size
 	auto ne = sz-w-1;

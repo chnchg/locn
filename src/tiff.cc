@@ -69,13 +69,11 @@ uint32_t Tiff::to32(DEntry const & e)
 std::string Tiff::get_str(DEntry const & e)
 {
 	tcheck(e,2);
-	char * b = new char[e.count];
+	std::vector<char> b(e.count);
 	sp->seekg(e.data);
-	sp->read(b,e.count);
-	if (b[e.count-1]!='\0') warn("String does not end with '\\0'");
-	std::string s(b,e.count);
-	delete [] b;
-	return s;
+	sp->read(b.data(),e.count);
+	if (b[e.count-1]!='\0') warn << "String does not end with '\\0'";
+	return std::string(b.data(),e.count);
 }
 
 std::vector<uint16_t> Tiff::get16s(DEntry const & e)
@@ -121,16 +119,16 @@ void Tiff::start()
 	le = string(b) == "II"; // little endian?
 	efix = le^is_little();
 	auto check = read16();
-	msg(9) << '[' << b << "]:" << check << '\n';
+	debug << '[' << b << "]:" << check << '\n';
 	ifd = read32();
-	msg(9) << "IFD at " << ifd << '\n';
+	debug << "IFD at " << ifd << '\n';
 }
 
 uint32_t Tiff::parse_ifd(uint32_t i)
 {
 	sp->seekg(i?i:ifd);
 	auto nde = read16();
-	msg(9) << "# dentry = " << nde << '\n';
+	debug << "# dentry = " << nde << '\n';
 	vector<DEntry> delist;
 	for (unsigned i = 0; i < nde; i ++) {
 		auto e = read_dentry();
@@ -161,9 +159,9 @@ uint32_t Tiff::parse_ifd(uint32_t i)
 	for (auto e: delist) {
 		auto i = ptag.find((Tag)e.tag);
 		if (i!=ptag.end()) i->second(e);
-		else msg(8) << "unprocessed tag:" << e.tag << '\n';
+		else info << "unprocessed tag:" << e.tag << '\n';
 	}
-	msg(9) << " next: " << ni << '\n';
+	debug << " next IFD: " << ni << '\n';
 	return ni;
 }
 
