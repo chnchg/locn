@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['start',['start',['../classTiff.html#a49ecf0386cbdc241789375a011deed13',1,'Tiff']]]
+  ['read_5fimage',['read_image',['../classTiff.html#ae776d9a9fbac7591782e52064dcaa7e3',1,'Tiff']]]
 ];

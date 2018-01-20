@@ -75,9 +75,9 @@ Include dependency graph for localization.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="localization_8cc__incl.png" border="0" usemap="#localization_8cc" alt=""/></div>
 <map name="localization_8cc" id="localization_8cc">
-<area shape="rect" id="node2" href="tiff_8hh.html" title="Process TIFF file. " alt="" coords="369,80,423,107"/>
-<area shape="rect" id="node12" href="nelder__mead_8hh.html" title="Nelder–Mead method for function minimization. " alt="" coords="448,80,563,107"/>
-<area shape="rect" id="node13" href="utils_8hh.html" title="Miscellaneous utilities. " alt="" coords="587,80,651,107"/>
+<area shape="rect" id="node2" href="tiff_8hh.html" title="Class for processing TIFF file. " alt="" coords="193,80,247,107"/>
+<area shape="rect" id="node8" href="nelder__mead_8hh.html" title="Nelder–Mead method for function minimization. " alt="" coords="273,80,388,107"/>
+<area shape="rect" id="node9" href="utils_8hh.html" title="Miscellaneous utilities. " alt="" coords="412,80,476,107"/>
 </map>
 </div>
 </div>
@@ -90,15 +90,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lo
 <tr class="memdesc:a1552072e752d33ec745716fe4071b58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point-spread function with integrated Gaussian. <br /></td></tr>
 <tr class="separator:a1552072e752d33ec745716fe4071b58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971c1124528f2b9ec0514200d0e43fbd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localization_8cc.html#a971c1124528f2b9ec0514200d0e43fbd">likelihood</a> (double const *i, int l, int w, double const *p)</td></tr>
-<tr class="memdesc:a971c1124528f2b9ec0514200d0e43fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">negative Likelihood calculation for given parameter  <a href="#a971c1124528f2b9ec0514200d0e43fbd">More...</a><br /></td></tr>
+<tr class="memdesc:a971c1124528f2b9ec0514200d0e43fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">negative <a class="el" href="classLikelihood.html" title="Functor for likelihood calculation. ">Likelihood</a> calculation for given parameter  <a href="#a971c1124528f2b9ec0514200d0e43fbd">More...</a><br /></td></tr>
 <tr class="separator:a971c1124528f2b9ec0514200d0e43fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56cdd35eabf9274968ca1b465a262e99"><td class="memItemLeft" align="right" valign="top"><a id="a56cdd35eabf9274968ca1b465a262e99"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localization_8cc.html#a56cdd35eabf9274968ca1b465a262e99">fn</a> (double const *p)</td></tr>
 <tr class="memdesc:a56cdd35eabf9274968ca1b465a262e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be minimized. <br /></td></tr>
 <tr class="separator:a56cdd35eabf9274968ca1b465a262e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a859880c6ec0f5f19e5767cd322a41d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localization_8cc.html#a859880c6ec0f5f19e5767cd322a41d2b">process_image</a> (double const *data, unsigned w, unsigned h)</td></tr>
-<tr class="memdesc:a859880c6ec0f5f19e5767cd322a41d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a single 2D image.  <a href="#a859880c6ec0f5f19e5767cd322a41d2b">More...</a><br /></td></tr>
-<tr class="separator:a859880c6ec0f5f19e5767cd322a41d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b92e7011939ea9b04e0aaa62f428e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localization_8cc.html#a37b92e7011939ea9b04e0aaa62f428e3">process_image</a> (double const *data, int w, int h)</td></tr>
+<tr class="memdesc:a37b92e7011939ea9b04e0aaa62f428e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a single 2D image.  <a href="#a37b92e7011939ea9b04e0aaa62f428e3">More...</a><br /></td></tr>
+<tr class="separator:a37b92e7011939ea9b04e0aaa62f428e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localization_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function for localization. <br /></td></tr>
@@ -158,7 +158,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
       </table>
 </div><div class="memdoc">
 
-<p>negative Likelihood calculation for given parameter </p>
+<p>negative <a class="el" href="classLikelihood.html" title="Functor for likelihood calculation. ">Likelihood</a> calculation for given parameter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>image </td></tr>
@@ -173,8 +173,8 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="a859880c6ec0f5f19e5767cd322a41d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a859880c6ec0f5f19e5767cd322a41d2b">&#9670;&nbsp;</a></span>process_image()</h2>
+<a id="a37b92e7011939ea9b04e0aaa62f428e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b92e7011939ea9b04e0aaa62f428e3">&#9670;&nbsp;</a></span>process_image()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,13 +188,13 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>

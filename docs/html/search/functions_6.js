@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parse_5fifd',['parse_ifd',['../classTiff.html#a57698d11764128ecd08ec50a1dd276b4',1,'Tiff']]],
-  ['process_5fimage',['process_image',['../localization_8cc.html#a859880c6ec0f5f19e5767cd322a41d2b',1,'localization.cc']]],
-  ['psf_5fig2',['psf_ig2',['../localization_8cc.html#a1552072e752d33ec745716fe4071b58f',1,'localization.cc']]]
+  ['operator_28_29',['operator()',['../classLikelihood.html#a2db089a6882c9de726a8483c7f3b2018',1,'Likelihood']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../utils_8hxx.html#a6af791124d9a6c4b5b9ea7cc1e800dd2',1,'utils.hxx']]]
 ];

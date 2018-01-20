@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['photometric',['Photometric',['../classTiff.html#ae2b5d8532625ca4d077cbdc598ceb0e4',1,'Tiff']]]
+  ['msglevel',['MsgLevel',['../utils_8cc.html#a31570fe2726a5fa4db4faf813d0522fd',1,'utils.cc']]]
 ];

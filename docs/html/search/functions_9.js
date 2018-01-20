@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tiff',['Tiff',['../classTiff.html#a9dc118af0bb6cb900f6aa615e309695d',1,'Tiff']]]
+  ['set_5fimage',['set_image',['../classLikelihood.html#ab6a65d9eb711bfa2f0c8d02fe7f7715a',1,'Likelihood']]],
+  ['start',['start',['../classTiff.html#a49ecf0386cbdc241789375a011deed13',1,'Tiff']]]
 ];

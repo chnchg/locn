@@ -143,17 +143,14 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9dc118af0bb6cb900f6aa615e309695d"><td class="memItemLeft" align="right" valign="top"><a id="a9dc118af0bb6cb900f6aa615e309695d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a9dc118af0bb6cb900f6aa615e309695d">Tiff</a> (std::shared_ptr&lt; std::istream &gt; s)</td></tr>
-<tr class="memdesc:a9dc118af0bb6cb900f6aa615e309695d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct TIFF processor from an input stream. <br /></td></tr>
-<tr class="separator:a9dc118af0bb6cb900f6aa615e309695d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ecf0386cbdc241789375a011deed13"><td class="memItemLeft" align="right" valign="top"><a id="a49ecf0386cbdc241789375a011deed13"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a49ecf0386cbdc241789375a011deed13">start</a> ()</td></tr>
-<tr class="memdesc:a49ecf0386cbdc241789375a011deed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">start with TIFF file header <br /></td></tr>
+<tr class="memitem:a61bed758d250ae127393f5e1cb2750d8"><td class="memItemLeft" align="right" valign="top"><a id="a61bed758d250ae127393f5e1cb2750d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a61bed758d250ae127393f5e1cb2750d8">Tiff</a> (std::shared_ptr&lt; std::ifstream &gt; s)</td></tr>
+<tr class="memdesc:a61bed758d250ae127393f5e1cb2750d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct TIFF processor from an input stream. <br /></td></tr>
+<tr class="separator:a61bed758d250ae127393f5e1cb2750d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ecf0386cbdc241789375a011deed13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a49ecf0386cbdc241789375a011deed13">start</a> ()</td></tr>
 <tr class="separator:a49ecf0386cbdc241789375a011deed13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57698d11764128ecd08ec50a1dd276b4"><td class="memItemLeft" align="right" valign="top"><a id="a57698d11764128ecd08ec50a1dd276b4"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a57698d11764128ecd08ec50a1dd276b4">parse_ifd</a> (uint32_t i=0)</td></tr>
-<tr class="memdesc:a57698d11764128ecd08ec50a1dd276b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse image file directory (IFD) <br /></td></tr>
+<tr class="memitem:a57698d11764128ecd08ec50a1dd276b4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#a57698d11764128ecd08ec50a1dd276b4">parse_ifd</a> (uint32_t i=0)</td></tr>
+<tr class="memdesc:a57698d11764128ecd08ec50a1dd276b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse image file directory (IFD)  <a href="#a57698d11764128ecd08ec50a1dd276b4">More...</a><br /></td></tr>
 <tr class="separator:a57698d11764128ecd08ec50a1dd276b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae776d9a9fbac7591782e52064dcaa7e3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiff.html#ae776d9a9fbac7591782e52064dcaa7e3">read_image</a> ()</td></tr>
 <tr class="separator:ae776d9a9fbac7591782e52064dcaa7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,8 +249,37 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TIFF file processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="tiff_8hh_source.html#l00016">16</a> of file <a class="el" href="tiff_8hh_source.html">tiff.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiff_8hh_source.html#l00013">13</a> of file <a class="el" href="tiff_8hh_source.html">tiff.hh</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57698d11764128ecd08ec50a1dd276b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57698d11764128ecd08ec50a1dd276b4">&#9670;&nbsp;</a></span>parse_ifd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Tiff::parse_ifd </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>i</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse image file directory (IFD) </p>
+<dl class="section return"><dt>Returns</dt><dd>offset position for next IFD, 0 if there is no more </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>offset position for the IFD </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="tiff_8cc_source.html#l00127">127</a> of file <a class="el" href="tiff_8cc_source.html">tiff.cc</a>.</p>
+
+</div>
+</div>
 <a id="ae776d9a9fbac7591782e52064dcaa7e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae776d9a9fbac7591782e52064dcaa7e3">&#9670;&nbsp;</a></span>read_image()</h2>
 
@@ -270,7 +296,27 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 <p>read image data </p>
 
-<p class="definition">Definition at line <a class="el" href="tiff_8cc_source.html#l00170">170</a> of file <a class="el" href="tiff_8cc_source.html">tiff.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tiff_8cc_source.html#l00168">168</a> of file <a class="el" href="tiff_8cc_source.html">tiff.cc</a>.</p>
+
+</div>
+</div>
+<a id="a49ecf0386cbdc241789375a011deed13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ecf0386cbdc241789375a011deed13">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tiff::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>start with TIFF file header </p>
+
+<p class="definition">Definition at line <a class="el" href="tiff_8cc_source.html#l00113">113</a> of file <a class="el" href="tiff_8cc_source.html">tiff.cc</a>.</p>
 
 </div>
 </div>

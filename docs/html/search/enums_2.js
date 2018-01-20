@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sampleformat',['SampleFormat',['../classTiff.html#ac92d1b6513e59d99bf66976124c2f4fa',1,'Tiff']]]
+  ['photometric',['Photometric',['../classTiff.html#ae2b5d8532625ca4d077cbdc598ceb0e4',1,'Tiff']]]
 ];

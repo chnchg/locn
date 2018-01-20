@@ -1,5 +1,5 @@
 <map id="localization.cc" name="localization.cc">
-<area shape="rect" id="node2" href="$tiff_8hh.html" title="Process TIFF file. " alt="" coords="369,80,423,107"/>
-<area shape="rect" id="node12" href="$nelder__mead_8hh.html" title="Nelder–Mead method for function minimization. " alt="" coords="448,80,563,107"/>
-<area shape="rect" id="node13" href="$utils_8hh.html" title="Miscellaneous utilities. " alt="" coords="587,80,651,107"/>
+<area shape="rect" id="node2" href="$tiff_8hh.html" title="Class for processing TIFF file. " alt="" coords="193,80,247,107"/>
+<area shape="rect" id="node8" href="$nelder__mead_8hh.html" title="Nelder–Mead method for function minimization. " alt="" coords="273,80,388,107"/>
+<area shape="rect" id="node9" href="$utils_8hh.html" title="Miscellaneous utilities. " alt="" coords="412,80,476,107"/>
 </map>

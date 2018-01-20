@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tiff',['Tiff',['../classTiff.html',1,'']]]
+  ['likelihood',['Likelihood',['../classLikelihood.html',1,'']]]
 ];

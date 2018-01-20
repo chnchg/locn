@@ -1,5 +1,6 @@
 <map id="utils.hh" name="utils.hh">
-<area shape="rect" id="node2" href="$localization_8cc.html" title="localization.cc" alt="" coords="5,80,111,107"/>
-<area shape="rect" id="node3" href="$tiff_8cc.html" title="tiff.cc" alt="" coords="135,80,189,107"/>
-<area shape="rect" id="node4" href="$utils_8cc.html" title="utils.cc" alt="" coords="214,80,278,107"/>
+<area shape="rect" id="node2" href="$loc1_8cc.html" title="loc1.cc" alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" href="$localization_8cc.html" title="localization.cc" alt="" coords="94,80,199,107"/>
+<area shape="rect" id="node4" href="$tiff_8cc.html" title="tiff.cc" alt="" coords="223,80,278,107"/>
+<area shape="rect" id="node5" href="$utils_8cc.html" title="Miscellaneous utilities. " alt="" coords="303,80,367,107"/>
 </map>

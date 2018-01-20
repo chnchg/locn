@@ -31,11 +31,14 @@ class Likelihood
 	int w; ///<original image width (for row skip)
 public:
 	int cnt; ///<evaluaton count for the function
+	/// Construct the calculator
 	Likelihood(
 		int l, ///<lateral size
 		int w ///<original image width
 	) : l(l), w(w) {}
+	/// Set the image for calculation
 	void set_image(double const * im) {i = im;}
+	/// Actual calculation make the functor
 	double operator()(param_t const & p)
 	{
 		double tl = 0;
@@ -47,11 +50,12 @@ public:
 	}
 };
 
+/// Detected particle
 struct Particle
 {
-	int x;
-	int y;
-	param_t p;
+	int x; ///<x coordinate of the maximum
+	int y; ///<y coordinate of the maximum
+	param_t p; ///<fitted parameters of the point-spread function
 };
 
 /// Process a single 2D image

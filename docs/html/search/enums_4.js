@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unit',['Unit',['../classTiff.html#a82d05004f5f5b8a3230951f41f535786',1,'Tiff']]]
+  ['tag',['Tag',['../classTiff.html#a2d2a6cc54a8a3f8fd6bda100baa17c79',1,'Tiff']]]
 ];
