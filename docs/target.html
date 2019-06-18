@@ -7,18 +7,26 @@
 <p>A description of the protocol of particle localization</p>
 <h2>ThunderSTORM (ImageJ plugin)</h2>
 <p>Input: a TIFF file containing multiple images of fluorescent microscopy</p>
-<p>Output: particle locations with width, height, and background level of fitted point-spread function</p>
+<p>Output: particle locations with width, height, and background level of fitted
+	point-spread function</p>
 <ol>
-<li>Raw image <b>I</b> is filtered with B-spline wavelet filters twice to produce <b>F</b><sub>1</sub>
-	and <b>F</b><sub>2</sub></li>
-<li>8-connected local maxima <i><b>x</b><sub>i</sub></i> are located in <b>F</b><sub>2</sub> with
-	<b>I</b>(<i><b>x</b><sub>i</sub></i>) > 1.5&times;STD(<b>F</b><sub>1</sub>)</li>
-<li>For each maximum <i><b>x</b><sub>i</sub></i>, a square region of size (2<i>l</i>+1)<sup>2</sup>
-	is used to fit a integrated-Gaussian point-spread function for the most-likely values of
-	the parameters:	center, <i>x</i><sub>c</sub> and <i>y</i><sub>c</sub>, width <i>&sigma;</i>,
+<li>Raw image <b>I</b> is filtered with B-spline wavelet filters twice to
+	produce <b>F</b><sub>1</sub> and <b>F</b><sub>2</sub></li>
+<li>8-connected local maxima <i><b>x</b><sub>i</sub></i> are located in
+	<b>F</b><sub>2</sub> with	<b>I</b>(<i><b>x</b><sub>i</sub></i>) >
+	1.5&times;STD(<b>F</b><sub>1</sub>)</li>
+<li>For each maximum <i><b>x</b><sub>i</sub></i>, a square region of size
+	(2<i>l</i>+1)<sup>2</sup>	is used to fit a integrated-Gaussian point-spread
+	function for the most-likely values of the parameters:	center,
+	<i>x</i><sub>c</sub> and <i>y</i><sub>c</sub>, width <i>&sigma;</i>,
 	height <i>h</i>, and background <i>b</i></li>
 </ol>
 <h3>Wavelet filter</h3>
+<ul>
+<li>B-Spline convolution kernel: <b>k</b><sub>1</sub>,
+	<b>k</b><sub>2</sub></li>
+<li>Filtered image: </li>
+</ul>
 <h3>Point-spread function</h3>
 <h3>Most-likelihood fitting</h3>
 </body>
